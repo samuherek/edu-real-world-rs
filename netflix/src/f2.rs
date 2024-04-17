@@ -3,6 +3,9 @@ use std::collections::LinkedList;
 /// We have top movies in different countries.
 /// We want to merge them together based on the position and the
 /// id order. 1 is the most popular
+/// Complexity is
+/// Time: O(n x k2) -> n is num of list, k is len of the string
+/// Space: O(1) -> n is num of list, k is len of the string
 
 pub fn execute(list: Vec<LinkedList<i32>>) -> LinkedList<i32> {
     let mut res = LinkedList::new();
